@@ -3,9 +3,15 @@
     <head>
         <title>Web Application</title>
     </head>
-    <body bgcolor="cream">
-        <h1>PLEASE FILL IN THE FORM PROVIDED BELOW.</h1>
+
+    <body>
+        <div class="container">
+            <div class ="jumbotron">
+            <h1>PLEASE FILL IN THE FORM PROVIDED BELOW.</h1>
+            <p>Get to know the day of the week you were born</p>
+            </div>
         <p id="ibl">Day of The Week you were born calculator</p><br><Br><br>
+            
         Century :<input type="text" id="c"</input>
         <br><br>
         Year :<input type="text" id="y"</input>
@@ -14,9 +20,15 @@
         <br><br>
         Day :<input type="text" id="d"</input>
         <br><Br>
+            <form>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+
+            </form>
         <P id="resulstat"></P>
         <button id="btn" onclick="DOTW()">CLICK TO CALCULATE</button>
-
+        </div>
 
 
 
