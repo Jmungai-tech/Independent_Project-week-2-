@@ -16,6 +16,10 @@ alert(days);
      var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaki","Yaw","Kofi","Kwame"];
      var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-     if (gender==='male');{
-        alert(maleNames[days]);}
+     if (gender==='male'){
+        alert(maleNames[days]);
+        } else if (gender==='female') {
+        alert(femaleNames[days]);
+        }
+        
         
