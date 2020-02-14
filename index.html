@@ -5,6 +5,30 @@
         <link href="css/styles.css" rel="stylesheet">
     </head>
     <script>
+     function DOTW() {
+        var day= function(CC,YY,MM,DD) {
+    return  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+    }
+    var weekday= day(CC,YY,MM,DD);
+var days=weekday.toFixed(0);
+alert(days);
+    
+    var c= Document.getElementById(c);
+    var y= Document.getElementById(y);
+    var m= Document.getElementById(m);
+    var d= Document.getElementById(d);
+
+
+     var myDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+     var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaki","Yaw","Kofi","Kwame"];
+     var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+     
+     if (gender==='male'){
+  alert(maleNames[days]);
+  } else if (gender==='female') {
+  alert(femaleNames[days]);
+  }
+}
     
     
     
@@ -20,7 +44,9 @@
         </div>
         <p id="ibl">Day of The Week you were born calculator</p><br><Br><br>
             
-        <h2>Date of Birth</h2>
+        <h2>Date of Birth</h2><BR><BR>
+        Century:<input type="text" id="c">
+        <br><br><BR>
         Year :<input type="text" id="y">
         <br><br>
         Month :<input type="text" id="m">
