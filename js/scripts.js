@@ -12,13 +12,10 @@ var days=weekday.toFixed(0);
 alert(days);
 
 
-  var myDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+     var myDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
      var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaki","Yaw","Kofi","Kwame"];
      var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-    
-if (days==0){
-    alert(maleNames[0]);}
-    else{
-    alert("enter a valid date");
-    }
+     if (gender==='male');{
+        alert(maleNames[days]);}
+        
