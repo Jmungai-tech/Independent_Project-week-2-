@@ -2,41 +2,9 @@
 <html>
     <head>
         <title>Web Application</title>
+        <script src="js/scripts.js"></script>
         <link href="css/styles.css" rel="stylesheet">
     </head>
-    <script>
-     function DOTW() {
-    
-    var c= Document.getElementById(c);
-    var y= Document.getElementById(y);
-    var m= Document.getElementById(m);
-    var d= Document.getElementById(d);
-    var g= Document.getElementById(g);
-    
-    var day= function(CC,YY,MM,DD) {
-    return  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-    }
-    var weekday= day(CC,YY,MM,DD);
-var days=weekday.toFixed(0);
-alert(days);
-     var gender=("Gender");
-
-
-     var myDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-     var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaki","Yaw","Kofi","Kwame"];
-     var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-     
-     if (gender==='male'){
-  alert(maleNames[days]);
-  } else if (gender==='female') {
-  alert(femaleNames[days]);
-  }
-  Document.getELementById(resultat).innerHtml="your akaname is"+ DOTW;
-}
-    
-    
-    
-    </script>
 
     <body>
         <div class="container">
@@ -48,21 +16,25 @@ alert(days);
         </div>
         <p id="ibl">Day of The Week you were born calculator</p><br><Br><br>
             
-        <h2>Date of Birth</h2><BR><BR>
-        Century:<input type="text" id="c">
-        <br><br><BR>
-        Year :<input type="text" id="y">
-        <br><br>
-        Month :<input type="text" id="m">
-        <br><br>
-        Day :<input type="text" id="d">
-        <br><Br>
-            <form>
-                <P><strong>Gender</strong></P>
-            Gender:<input type="text" id="g">
-            </form>
-        <P id="resulstat"></P>
-        <button id="btn" onclick="DOTW()">CLICK TO CALCULATE</button>
+            <div class="col-lg-6 col-md-6 col-xs-8 col2" onsubmit="return false">
+            <label>Year of Birth</label><br>
+            <input type="text" placeholder="YoB" id= "year"><br><br>
+            
+            <label>Month</label><br>
+            <input type="text" placeholder="mm" id= "month"><br><br>
+
+            <label>Date</label><br>
+            <input type="text" placeholder="DoB" id="date"><br><Br>
+            
+            <select id="gender" name ="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            </select>
+            <input type="submit" onclick="akanNames()"class="btn btn-lg,btn-primary" value="submit" style="background-color">
+
+            <p id="answer"> and yourakan name is</p>
+        
+        </div>
 
         
 
@@ -72,4 +44,3 @@ alert(days);
 
   </body>
 </html>
-
