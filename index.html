@@ -11,6 +11,7 @@
     var y= Document.getElementById(y);
     var m= Document.getElementById(m);
     var d= Document.getElementById(d);
+    var g= Document.getElementById(g);
     
     var day= function(CC,YY,MM,DD) {
     return  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
@@ -58,10 +59,7 @@ alert(days);
         <br><Br>
             <form>
                 <P><strong>Gender</strong></P>
-            <input type="radio" name="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other
-
+            Gender:<input type="text" id="g">
             </form>
         <P id="resulstat"></P>
         <button id="btn" onclick="DOTW()">CLICK TO CALCULATE</button>
