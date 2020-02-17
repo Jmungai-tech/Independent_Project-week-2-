@@ -1,5 +1,5 @@
 function akanNames(){
-    var year=document.getElementById("year").value);
+    var year=document.getElementById("year").value;
     var MM = parseInt(document.getElementById("month").value);
     var DD = parseInt(document.getElementVyId("date").value);
     var CC = parseInt( year.slice(0,2));
@@ -21,7 +21,7 @@ function akanNames(){
         alert("please fill in the correct date")
     };
 
-    if (gender) ==="male"){
+    if (gender ==="male"){
         sex=male;
     }
     else{
@@ -31,6 +31,6 @@ function akanNames(){
     var output= sex[CalculateDate]
     document.getElementById("answer").innerHTML ="Congratulations your Akan name is"+ output+".";
 
-};
+}; 
         
         
