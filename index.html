@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Web Application</title>
-        <script src="js/scripts.js"></script>
-        <link href="css/styles.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Birthday Week Application</title>
+ <link rel="stylesheet" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/scripts.js"></script>
     </head>
-
     <body>
-        <div class="container">
-            <div class="jumbotron">
-         
-              <h1>PLEASE FILL IN THE FORM PROVIDED BELOW.</h1>
-            <p>Get to know the day of the week you were born</p>
-           </div>
-        </div>
-        <p id="ibl">Day of The Week you were born calculator</p><br><Br><br>
+       <div class="view" style="background-image: url('images/africanw.jpg'); background-repeat: background-size: cover; background-position: center center"> 
 
-               
-
-            <label>Year of Birth</label><br>
-            <input type="text" placeholder="YoB" id= "year"><br><br>
-            
-            <label>Month</label><br>
-            <input type="text" placeholder="mm" id= "month"><br><br>
-
-            <label>Date</label><br>
-            <input type="text" placeholder="DoB" id="date"><br><Br>
-            
-            <select id="gender" name ="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            </select>
-            <input type="submit" onclick="akanNames()">
-
-            <p id="answer"> And your akan name is</p>
-        
+     <div class="container-fluid">
+       
     
+      <div class="container">
+          <div class="col-12 bg-dark text-white">
+           
+              <h5  class="text-center  text-info" ><u>Background Information</u></h5>
+              <p>Children are considered to be a gift from God in Ghana.
+                  The birth of a child is therefore a very joyous and important occasion
+                  in the life of the parents and the community at large, and the naming ceremony
+                  is usually carried out with much celebration.
+                  At birth, the child is given a day name based upon the gender and
+                   day of the week on which the child was born.</p>
+          </div>
+      <div class="col-12 bg-dark text-white">
+        <form method="post" onsubmit="return false" class="form">
+          <label for="month">Month</label>
+          <input type="number" name="month" id="month" maxlength="2"placeholder="month in figures"required/>
+          <label for="date">Date</label>
+          <input type="number" name="date" id="day" maxlength="2"placeholder="day in figure" required/>
+          <label for="year">Year</label>
+          <input type="number" name="year" id="year" maxlength="4"placeholder="year in figure" required/>
+          <div class="row col-md-6 text-center bg-dark">
+            <h6><b>Gender</b></h6>
+          <input type="radio"  name="gender" id="gender" value="male" checked/> Male<br>
+          <input type="radio" name="gender" id="gender" value="female" checked>Female<br>
+          <input type="submit" value="submit" onclick="nickNames()">
+          </div>
+      </form>
+      <div class="col 12 bg-primary ">
+        <marquee scroll="slide"><p id="results"> YOUR AKAN NAME IS:</p></marquee>
+      </div>
+      <br>
+      </div>
+      
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 bg-dark text-info text-center">
+          <h5><b><u>Contact</u></b></h5>
+          
+          <p>
+            <i>
+              TEL 07564326 846<br>
 
+              EMAIL charledDarwin@gmail.com<br>
+              FAX   56669<br>
+              LOCATION Ngara House<br>
+            </i>
+          </p>
+        </div>
+        <div class="col-sm-4 bg-dark text-white text-center" >
+          <h5><b><u>Visit Ghana</u></b></h5>
+          <p>
+            Ghana is a very interesting place to visit.They have so many diversed cultures which you can learn from.<br>
+            Go and see for yourself.
+          </p>
+        </div>
         
-
-
-
-
-
-  </body>
+      </div>
+    </div>
+    </body>
 </html>
